@@ -37,13 +37,13 @@
         'model' => $model,
     ]);
 ````
-4. В UserProfile.php в методе ``tableName`` пишем в самом начале название своей базы данных  
+4. В UserProfile.php в методе ``tableName()`` пишем в самом начале название своей базы данных  
 
 5. Даем права на создание папок в директории.  
 
 ### Как работает:  
 В ``index.php`` присваиваем ``$model = new bubogumy\UserProfile();``  
-Подключаем [jQuery] для работы Ajax запросов  
+Подключаем [jQuery](https://jquery.com/) для работы Ajax запросов  
 Создаем форму  
 ````
     <form enctype="multipart/form-data" method="post" action="/site/upload" id="form">
