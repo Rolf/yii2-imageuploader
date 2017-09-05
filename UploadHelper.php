@@ -84,7 +84,7 @@ class UploadHelper extends FileHelper
     public static function baseUrl()
     {
         if (self::$url === null) {
-            self::$url = (\Yii::$app->params['StaticUrl'] ?? '') ?: \Yii::$app->params['Url'];
+            self::$url = (\Yii::$app->params['staticUrl'] ?? '') ?: \Yii::$app->params['url'];
         }
 
         return self::$url;

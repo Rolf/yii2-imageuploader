@@ -279,8 +279,8 @@ trait UploadTrait
      */
     private function preparePath($url)
     {
-        $pattern = '/' . preg_quote(\Yii::$app->params['StaticUrl'], '/') . '/';
-        return !empty(\Yii::$app->params['StaticUrl'])
+        $pattern = '/' . preg_quote(\Yii::$app->params['staticUrl'], '/') . '/';
+        return !empty(\Yii::$app->params['staticUrl'])
             ? preg_replace($pattern, '', $url) : parse_url($url, PHP_URL_PATH);
     }
 }
