@@ -25,9 +25,10 @@
 ```
 
 3. В controller/SiteController.php в метод ``actions`` добавляем ``'upload' => 'bubogumy\UploadAction'``  
+Подключаем ``use bubogumy\UserProfile``  
 Так же правим метод actionIndex и вставляем следующее  
 ````
-    $model = new bubogumy\UserProfile();
+    $model = new UserProfile();
     
     if ($model->load(Yii::$app->request->post()) && $model->save()) {
         return $this->goBack();
