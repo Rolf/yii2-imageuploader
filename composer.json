@@ -1,0 +1,14 @@
+{
+  "name": "bubogumy/imageUploader",
+  "type": "yii2-extension",
+  "description": "Сервис для загрузки изображений.",
+  "autoload": {
+    "psr-4": {
+      "bubogumy\\": ""
+    }
+  },
+  "require": {
+    "yiisoft/yii2": "*",
+    "yiisoft/yii2-composer": "*"
+  }
+}
