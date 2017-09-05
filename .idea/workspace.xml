@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b0a6e0c-677c-4260-87fd-54a0933b8790" name="Default" comment="" />
+    <list default="true" id="7b0a6e0c-677c-4260-87fd-54a0933b8790" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,12 +24,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageService.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageService.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="678">
+                <caret line="79" column="4" lean-forward="false" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
+                <folding>
+                  <marker date="1504585764451" expanded="true" signature="1459:2174" ph="..." />
+                  <marker date="1504585764451" expanded="true" signature="1481:2159" ph="{...}" />
+                  <marker date="1504585764451" expanded="true" signature="1530:2147" ph="{...}" />
+                  <marker date="1504585764451" expanded="true" signature="1683:2131" ph="{&quot;data&quot;: formData...}" />
+                  <marker date="1504585764451" expanded="true" signature="1977:2113" ph="{...}" />
+                  <marker date="1504585764451" expanded="true" signature="2011:2091" ph="{...}" />
+                  <marker date="1504585764451" expanded="true" signature="2612:2715" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -96,8 +120,8 @@
       <file leaf-file-name="UserProfile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserProfile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            <state relative-caret-position="432">
+              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
               <folding>
                 <element signature="e#28#57#0#PHP" expanded="true" />
               </folding>
@@ -127,6 +151,7 @@
         <option value="$PROJECT_DIR$/UploadService.php" />
         <option value="$PROJECT_DIR$/UploadTrait.php" />
         <option value="$PROJECT_DIR$/UserProfile.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -202,12 +227,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504583802255</updated>
-      <workItem from="1504583803676" duration="553000" />
+      <workItem from="1504583803676" duration="1961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="553000" />
+    <option name="totallyTimeSpent" value="1961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -293,16 +318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserProfile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding>
-            <element signature="e#28#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UploadAction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -316,6 +331,35 @@
         <state relative-caret-position="180">
           <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserProfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="e#28#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="678">
+            <caret line="79" column="4" lean-forward="false" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
+            <folding>
+              <marker date="1504585764451" expanded="true" signature="1459:2174" ph="..." />
+              <marker date="1504585764451" expanded="true" signature="1481:2159" ph="{...}" />
+              <marker date="1504585764451" expanded="true" signature="1530:2147" ph="{...}" />
+              <marker date="1504585764451" expanded="true" signature="1683:2131" ph="{&quot;data&quot;: formData...}" />
+              <marker date="1504585764451" expanded="true" signature="1977:2113" ph="{...}" />
+              <marker date="1504585764451" expanded="true" signature="2011:2091" ph="{...}" />
+              <marker date="1504585764451" expanded="true" signature="2612:2715" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
