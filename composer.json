@@ -1,5 +1,5 @@
 {
-  "name": "bubogumy/imageUploader",
+  "name": "bubogumy/imageuploader",
   "type": "yii2-extension",
   "description": "Сервис для загрузки изображений.",
   "autoload": {
