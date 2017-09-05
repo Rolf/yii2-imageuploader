@@ -1,7 +1,7 @@
 {
   "name": "bubogumy/imageuploader",
   "type": "yii2-extension",
-  "description": "Сервис для загрузки изображений.",
+  "description": "Сервис для загрузки изображений, сделанный через трейты.",
   "autoload": {
     "psr-4": {
       "bubogumy\\": ""
