@@ -16,9 +16,9 @@ use yii\db\AfterSaveEvent;
  *
  * !!! Для корректной работы поведения обязательно нужно использовать интерфейс UploadInterface
  * в модели к которой относится поведение
- * Class UploadBehavior
- * @package app\components\uploader
- * @property ActiveRecord|UploadInterface $owner Модель к которой относится поведение
+ *
+ * Trait UploadTrait
+ * @package bubogumy
  */
 trait UploadTrait
 {
@@ -41,6 +41,9 @@ trait UploadTrait
         ];
     }
 
+    /**
+     * Подписка на события
+     */
     public function subscribeEvent()
     {
         $this->on(ActiveRecord::EVENT_BEFORE_INSERT, [$this, 'beforeInsert']);

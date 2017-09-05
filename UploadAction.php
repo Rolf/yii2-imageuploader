@@ -16,9 +16,8 @@ use yii\web\UploadedFile;
  * Экшен для загрузки файлов на сервер
  *
  * Class UploadAction
- * @package app\components\uploader
+ * @package bubogumy
  */
-
 class UploadAction extends Action
 {
     use UploadTrait;
