@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b0a6e0c-677c-4260-87fd-54a0933b8790" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,16 +37,16 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="678">
-                <caret line="79" column="4" lean-forward="false" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
+              <first_editor relative-caret-position="306">
+                <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
                 <folding>
-                  <marker date="1504585764451" expanded="true" signature="1459:2174" ph="..." />
-                  <marker date="1504585764451" expanded="true" signature="1481:2159" ph="{...}" />
-                  <marker date="1504585764451" expanded="true" signature="1530:2147" ph="{...}" />
-                  <marker date="1504585764451" expanded="true" signature="1683:2131" ph="{&quot;data&quot;: formData...}" />
-                  <marker date="1504585764451" expanded="true" signature="1977:2113" ph="{...}" />
-                  <marker date="1504585764451" expanded="true" signature="2011:2091" ph="{...}" />
-                  <marker date="1504585764451" expanded="true" signature="2612:2715" ph="..." />
+                  <marker date="1504586096925" expanded="true" signature="1653:2368" ph="..." />
+                  <marker date="1504586096925" expanded="true" signature="1675:2353" ph="{...}" />
+                  <marker date="1504586096925" expanded="true" signature="1724:2341" ph="{...}" />
+                  <marker date="1504586096925" expanded="true" signature="1877:2325" ph="{&quot;data&quot;: formData...}" />
+                  <marker date="1504586096925" expanded="true" signature="2171:2307" ph="{...}" />
+                  <marker date="1504586096925" expanded="true" signature="2205:2285" ph="{...}" />
+                  <marker date="1504586096925" expanded="true" signature="2806:2909" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -227,12 +226,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504583802255</updated>
-      <workItem from="1504583803676" duration="1961000" />
+      <workItem from="1504583803676" duration="2294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1961000" />
+    <option name="totallyTimeSpent" value="2294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -276,6 +275,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UploadTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#106#130#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserProfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="e#28#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UploadAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UploadException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -308,24 +335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UploadTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="e#106#130#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UploadAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ImageService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -334,29 +343,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserProfile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding>
-            <element signature="e#28#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="678">
-            <caret line="79" column="4" lean-forward="false" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
+          <first_editor relative-caret-position="306">
+            <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             <folding>
-              <marker date="1504585764451" expanded="true" signature="1459:2174" ph="..." />
-              <marker date="1504585764451" expanded="true" signature="1481:2159" ph="{...}" />
-              <marker date="1504585764451" expanded="true" signature="1530:2147" ph="{...}" />
-              <marker date="1504585764451" expanded="true" signature="1683:2131" ph="{&quot;data&quot;: formData...}" />
-              <marker date="1504585764451" expanded="true" signature="1977:2113" ph="{...}" />
-              <marker date="1504585764451" expanded="true" signature="2011:2091" ph="{...}" />
-              <marker date="1504585764451" expanded="true" signature="2612:2715" ph="..." />
+              <marker date="1504586096925" expanded="true" signature="1653:2368" ph="..." />
+              <marker date="1504586096925" expanded="true" signature="1675:2353" ph="{...}" />
+              <marker date="1504586096925" expanded="true" signature="1724:2341" ph="{...}" />
+              <marker date="1504586096925" expanded="true" signature="1877:2325" ph="{&quot;data&quot;: formData...}" />
+              <marker date="1504586096925" expanded="true" signature="2171:2307" ph="{...}" />
+              <marker date="1504586096925" expanded="true" signature="2205:2285" ph="{...}" />
+              <marker date="1504586096925" expanded="true" signature="2806:2909" ph="..." />
             </folding>
           </first_editor>
           <second_editor />

@@ -1,6 +1,17 @@
 ## Расширение для загрузки изображений
 Для корректной работы необходимо установить [Imagine Extension for Yii 2](http://www.yiiframework.com/doc-2.0/ext-imagine-index.html)  
 
+#### Установка  
+В composer.json  
+```
+"require": {
+    "bubogumy/imageuploader": "dev-master"
+}
+```  
+В терминале ``composer require bubogumy/imageuploader``  
+
+#### Настройка  
+
 1. Добавляем в параметры следующие ключи:
 
 ````
@@ -13,10 +24,10 @@
 ./yii migrate --migrationPath=@vendor/bubogumy/imageuploader/migrations
 ```
 
-3. В controller/SiteController.php в метод ``actions`` добавляем ``'upload' => 'app\services\UploadAction'``  
+3. В controller/SiteController.php в метод ``actions`` добавляем ``'upload' => 'bubogumy\UploadAction'``  
 Так же правим метод actionIndex и вставляем следующее  
 ````
-    $model = new UserProfile();
+    $model = new bubogumy\UserProfile();
     
     if ($model->load(Yii::$app->request->post()) && $model->save()) {
         return $this->goBack();
@@ -30,7 +41,7 @@
 5. Даем права на создание папок в директории.  
 
 ### Как работает:  
-В ``index.php`` присваиваем ``$model = new UserProfile();``  
+В ``index.php`` присваиваем ``$model = new bubogumy\UserProfile();``  
 Подключаем [jQuery] для работы Ajax запросов  
 Создаем форму  
 ````
