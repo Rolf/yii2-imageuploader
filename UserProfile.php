@@ -4,7 +4,7 @@ namespace bubogumy;
 
 use bubogumy\UploadInterface;
 use bubogumy\UploadTrait;
-use Yii;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "lang_data.user_profile".
@@ -14,7 +14,7 @@ use Yii;
  * @property string $logo
  * @property string $logo_prev
  */
-class UserProfile extends \yii\db\ActiveRecord implements UploadInterface
+class UserProfile extends ActiveRecord implements UploadInterface
 {
     use UploadTrait;
 

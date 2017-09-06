@@ -12,21 +12,20 @@
 
 #### Настройка  
 
-1. Добавляем в параметры следующие ключи:
+1. Добавляем компанент в конфиг:
 
 ````
-    'url' => '',
-    'staticUrl' => 'адрес вашего сайта',
-    'baseUploadPath' => ''
+    'imageUploader' => [
+                'class' => 'bubogumy\imageService',
+                'url' => '',
+                'staticUrl' => 'http://localhost/web',
+                'baseUploadPath' => ''
+            ],
 ````  
-2. Накатываем миграцию из папки migrations
-```
-./yii migrate --migrationPath=@vendor/bubogumy/imageuploader/migrations
-```
 
-3. В controller/SiteController.php в метод ``actions`` добавляем ``'upload' => 'bubogumy\UploadAction'``  
-Подключаем ``use bubogumy\UserProfile``  
-Так же правим метод actionIndex и вставляем следующее  
+2. В нужном контроллере делаем перенаправление на наш класс ``'upload' => 'bubogumy\UploadAction'``
+ 
+В нужный метод добавляем 
 ````
     $model = new UserProfile();
     
@@ -37,11 +36,165 @@
         'model' => $model,
     ]);
 ````
-4. В UserProfile.php в методе ``tableName()`` пишем в самом начале название своей базы данных  
+3. Создаем модель нашей таблицы, наследовав ``ActiveRecord``, подключив на трейт ``UploadTrait`` и реализировав интерфейсный класс ``UploadInterface`` с описанием событие. Так же нужно подписаться на события.  
 
-5. Даем права на создание папок в директории.  
+4. Даем права на создание папок в директории.  
 
-### Как работает:  
+5.  Файл ``clear-temp`` чистит автоматически папку ``temp``
+
+### Пример использования:  
+
+Описание моей модели:  
+````
+namespace app\models;
+
+use bubogumy\UploadInterface;
+use bubogumy\UploadTrait;
+use yii\db\ActiveRecord;  
+
+/**
+ * This is the model class for table "lang_data.user_profile".
+ *
+ * @property int $id
+ * @property string $name
+ * @property string $logo
+ * @property string $logo_prev
+ */
+class UserProfile extends ActiveRecord implements UploadInterface
+{
+    use UploadTrait;
+
+    public $filename;
+
+    /**
+     * @inheritdoc
+     */
+    public static function tableName()
+    {
+        return 'lang_data.user_profile';
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function rules()
+    {
+        return [
+            [['name', 'logo', 'logo_prev'], 'string', 'max' => 255],
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function userFind()
+    {
+        UserProfile::find()
+            ->all();
+    }
+
+    /**
+     * @return array
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'name' => 'Name',
+            'logo' => 'Logo',
+            'logo_prev' => 'Logo Prev',
+        ];
+    }
+
+    /**
+     * ID пользователя
+     *
+     * @return int
+     */
+    public function getUserId()
+    {
+        return 1;
+    }
+
+    /**
+     * Адрес до сурс картинки
+     *
+     * @return string
+     */
+    public function pathSettings()
+    {
+        return '/profile_logo/src/';
+    }
+
+    /**
+     * @return bool
+     */
+    public function beforeUploadEvent()
+    {
+        return true;
+    }
+
+    /**
+     * Адрес на превью картинку
+     *
+     * @return string
+     */
+    public function pathPreviewSettings()
+    {
+        return '/profile_logo/preview/';
+    }
+
+    /**
+     * Атрибут сурс картинки
+     *
+     * @return string
+     */
+    public function attributeSettings()
+    {
+        return 'logo';
+    }
+
+    /**
+     * Атрибут превью картинки
+     *
+     * @return string
+     */
+    public function attributePreviewSettings()
+    {
+        return 'logo_prev';
+    }
+
+    /**
+     * Получение адреса из бд до сурса
+     *
+     * @return string
+     */
+    public function getFileSettings()
+    {
+        return $this->logo;
+    }
+
+    /**
+     * Получение адреса из бд до превью
+     *
+     * @return string
+     */
+    public function getFilePreviewSettings()
+    {
+        return $this->logo_prev;
+    }
+
+    /**
+     * Подпись на события
+     */
+    public function init()
+    {
+        $this->subscribeEvent();
+        parent::init();
+    }
+}
+````
+
 В ``index.php`` присваиваем ``$model = new bubogumy\UserProfile();``  
 Подключаем [jQuery](https://jquery.com/) для работы Ajax запросов  
 Создаем форму  
